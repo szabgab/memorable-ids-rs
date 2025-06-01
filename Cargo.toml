@@ -1,0 +1,23 @@
+[package]
+name = "memorable-ids"
+description = "A flexible library for generating human-readable, memorable identifiers."
+version = "0.1.0"
+authors = ["Aris Ripandi <aris@duck.com>"]
+repository = "http://github.com/riipandi/memorable-ids-rs"
+homepage = "http://github.com/riipandi/memorable-ids-rs"
+documentation = "https://docs.rs/memorable-ids"
+keywords = ["hri", "human-readable", "identifier", "ids", "memorable"]
+license = "MIT"
+rust-version = "1.79"
+edition = "2021"
+publish = true
+exclude = ["example/*", "tmp/*"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4.27"
+rand = "0.9.1"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = { version = "1.0.140", features = ["raw_value"] }
+thiserror = "2.0.12"
